@@ -25,19 +25,19 @@ export class TarjetaDeCreditoComponent implements OnInit {
   }
 ];
 
-form: FormGroup;
+// form: FormGroup;
 
   constructor(private fb: FormBuilder,
               private toastr: ToastrService)
   { 
-    this.form = this.fb.group({
-      titulo: ['', [Validators.required,Validators.maxLength(20),Validators.minLength(5)]],
-      numeroTarjeta: ['', [Validators.required, Validators.maxLength(16), Validators.minLength(16)]],
-      fechaExpiracion: ['',[Validators.required, Validators.maxLength(5), Validators.minLength(5)]],
-      cvv:['', [Validators.required, Validators.maxLength(3), Validators.minLength(3)]]
-    })
-  }
 
+  }
+  form : FormGroup= this.fb.group({
+    titulo: ['', [Validators.required,Validators.maxLength(20),Validators.minLength(5)]],
+    numeroTarjeta: ['', [Validators.required, Validators.maxLength(16), Validators.minLength(16)]],
+    fechaExpiracion: ['',[Validators.required, Validators.maxLength(5), Validators.minLength(5)]],
+    cvv:['', [Validators.required, Validators.maxLength(3), Validators.minLength(3)]]
+  })
   ngOnInit(): void {
   }
   
