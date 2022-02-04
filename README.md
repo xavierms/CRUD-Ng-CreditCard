@@ -4,7 +4,7 @@
 ## Author: Xavier Mejia
 ![GitHub last commit](https://img.shields.io/github/last-commit/xavierms/CRUD-Ng-CreditCard)
 
-![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+![Credit Card!](https://github.com/xavierms/CRUD-Ng-CreditCard/blob/master/src/assets/CRUD_CreditCar_Project.png "Credit card")
 # FECreditCard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
