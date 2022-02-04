@@ -1,0 +1,86 @@
+
+//creando e inicicializando las variables
+int i=1,suma=0;
+
+//Hasta que la variable 'i' no sea igual a 100 no se cumple la condición booleana, o sea no se termina el bucle.
+while (i<=100)
+{
+// un acumulador, 
+suma=suma+i;
+
+//INCREMENTADOR.. se incrementa la variable i en el bucle cada vez se la recorre, se incrementa de 'i' en 1.
+i++;
+}
+
+while (getc(stdin)!=‘\x1B’); /* Bucle que espera hasta que se cumpla la condición*/
+
+ /* pulse la tecla Esc */
+
+while (1) /* Recordar que en C lo que no es cero es verdad */ 
+{
+
+d=getc(stdin);
+
+printf(“%c”,d);
+
+if (d==‘\x1B’)
+
+break;
+
+}
+
+----------------------------------------
+intnum;
+
+do
+
+scanf(“%d”, &num);
+
+while (num>100);
+
+inti,j;
+
+do
+
+{
+
+scanf(“%d”,&i);
+
+scanf(“%d”,&j);
+
+}
+
+while (i<j);
+
+ ------------------------------
+
+
+int x;
+
+for(x=0;x<10;x++)
+
+{
+
+for(;;)
+
+if (getc(stdin)==‘\x1B’)
+
+break;
+
+printf(“Salí del bucle infinito, el valor de x es: %d\n”,x);
+
+}
+
+int x;
+
+for(x=1;x<=100;x++) /* Esta rutina imprime en pantalla los */
+
+{ /*números pares */
+
+if (x%2)
+
+continue;
+
+printf(“%d\n”,x);
+
+}
