@@ -12,15 +12,18 @@ suma=suma+i;
 i++;
 }
 
-while (getc(stdin)!=‘\x1B’); /* Bucle que espera hasta que se cumpla la condición*/
+// La secuencia de escape \x1BE, o Esc+ E, es NEL o "Siguiente línea", y se usa en terminales y mainframes más antiguos para denotar CR+LF
+while (getc(stdin)!=‘\x1B’); /* Bucle que espera hasta que se cliqué la tecla ESC*/
 
  /* pulse la tecla Esc */
-
+//este bucle es parecido al Do while (en cierta forma), ya que siempre se cumple una condición, al ser True siempre
 while (1) /* Recordar que en C lo que no es cero es verdad */ 
 {
 
+// declarar la variable 'd', inicializarla con la funcion 'getc(param)
 d=getc(stdin);
 
+//imprime en consola 
 printf(“%c”,d);
 
 if (d==‘\x1B’)
